@@ -39,16 +39,14 @@ public class Empregado extends Pessoa {
     
     
    public double calcularSalario(){
-       return  salarioBase * imposto ;
-   } 
+       return salarioBase - salarioBase * imposto;}
     
     @Override
     public String toString(){
         return super.toString()
                 + "\nCodigo do Setor: " +codigoSetor
                 + "\nSalario Base: " +salarioBase
-                + "\nSalario: " + calcularSalario();
-    
+                + "\nSalario Bruto: " + calcularSalario();
 }
     
     
