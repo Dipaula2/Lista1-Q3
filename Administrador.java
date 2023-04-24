@@ -30,13 +30,14 @@ public class Administrador extends Empregado {
     
     @Override
     public double calcularSalario() {
-        return super.getSalarioBase()  + ajudaDeCusto - imposto;
+        return super.getSalarioBase() + ajudaDeCusto - super.getSalarioBase() * imposto;
     }
     
     @Override
     public String toString() {
         return super.toString()
                 + "\nAjuda de custo: " + ajudaDeCusto;
+            
                 
     }
     
