@@ -35,12 +35,10 @@ public class Vendedor extends Empregado{
         this.Comissao = Comissao;
     }
     
-      @Override
+       @Override
     public double calcularSalario() {
-        double salarioBase = super.getSalarioBase();
-        double salarioComComissao = salarioBase + (valorVendas * (Comissao / 100));
-        double salarioFinal = salarioComComissao - (salarioComComissao * imposto);
-        return salarioFinal;
+        return super.getSalarioBase() + (valorVendas * (Comissao / 100));
+        
     }
 
     @Override
