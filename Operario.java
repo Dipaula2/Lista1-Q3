@@ -45,7 +45,7 @@ public class Operario extends Empregado {
     @Override
     public String toString() {
         return super.toString() +
-                "\nValor da Produção: " + valorProduçao +
+                "\nValor da Producao: " + valorProduçao +
                 "\nComissso: " + comissao;
     }
     
